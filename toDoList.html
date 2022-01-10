@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="toDoList.css">
+    <script src="https://kit.fontawesome.com/6bb77a761d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header">       
+            <h3 id="title">To Do List</h3>
+            <h1 id="quote">Just keep going!</h1>
+            <input type="text" placeholder="Enter your task!" id="taskInput"/>
+            <button id="addInput">Add</button>
+            <button id="clearAll">Clear</button>
+        </div>
+        <div class="tasks">
+            <div id="notStartedDiv" class="column">
+                <p>Not started</p>
+                <br>
+                <div id="notStarted"></div>
+            </div>
+            <div id="inProgressDiv" class="column">
+                <p>In progress</p>
+                <br>
+                <div id="inProgress"></div>
+            </div>
+            <div id="alreadyDoneDiv" class="column">
+                <p>Done</p>
+                <br>
+                <div id="alreadyDone"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="toDoList.js"></script>
+</html>

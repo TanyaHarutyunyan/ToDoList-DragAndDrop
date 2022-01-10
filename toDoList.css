@@ -1,0 +1,319 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    padding: 10px;
+    background-color: #9d84bf;
+    height: 616px;
+}
+
+#title{
+    font-size: 55px;
+    text-align: center;
+    color:#434379;
+    margin: 0;
+}
+
+#quote{
+    font-size: 20px;
+    text-align: center;
+    color:#434379
+}
+
+#taskInput{
+    width: 330px;
+    height: 40px;
+    font-size: 20px;
+    color:#4b4b86;
+    margin-left: 8px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+#taskInput:focus{
+    outline: none;
+}
+
+#addInput{
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    color:#dfdfe9;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    background-color:#4b4b86;
+    cursor: pointer;
+}
+
+#addInput:focus{
+    outline: none;
+}
+
+#clearAll{
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    color:#dfdfe9;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    background-color:#4b4b86;
+    cursor: pointer;
+}
+
+#clearAll:focus{
+    outline: none;
+}
+
+.tasks{
+    display: flex;
+    width: 100%;
+}
+
+#notStartedDiv{
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    padding: 10px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 10px 10px #cfcfcf;
+}
+
+#notStartedDiv p{
+    color: white;
+    background-color:#4b4b86;
+}
+
+#inProgressDiv{
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    padding: 10px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 10px 10px #cfcfcf;
+}
+
+#inProgressDiv p{
+    color: white;
+    background-color:#4b4b86;
+}
+
+#alreadyDoneDiv{
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+    padding: 10px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 10px 10px #cfcfcf;
+}
+
+#alreadyDoneDiv p{
+    color: white;
+    background-color:#4b4b86;
+}
+
+.addedTask{
+    width: 320px;
+    height: 40px;
+    border: 1px solid rgb(184, 159, 207);
+    margin: 4px;
+    cursor: pointer;
+}
+
+.newTask{
+    color: #4b4b86;
+}
+
+.deleteButton{
+    width: 30px;
+    height: 33px;
+    float: right;
+    border: 1px solid rgb(187, 179, 179);
+    margin: 2px;
+    color: #4b4b86;;
+}
+
+.deleteButton:hover{
+    color: rgb(184, 159, 207);
+}
+
+@media screen and (max-width: 610px){
+    #taskInput{
+        width: 230px;
+        height: 30px;
+        font-size: 20px;
+        margin-left: 100px
+    }
+    #addInput{
+        width: 80px;
+        height: 30px;
+        font-size: 20px;
+    }
+    #clearAll{
+        width: 80px;
+        height: 30px;
+        font-size: 20px;
+    }
+    .tasks{
+        display: inline
+    }
+    #notStartedDiv{
+        width: 300px;
+        font-size: 30px;
+        margin-left: 20%;
+    }
+    #inProgressDiv{
+        width: 300px;;
+        font-size: 30px;
+        margin-left: 20%;
+    }
+    #alreadyDoneDiv{
+        width: 300px;
+        font-size: 30px;
+        margin-left: 20%;
+    }
+    #container{
+        height: 700px;
+    }
+    #title{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #taskInput{
+        width: 220px;
+        height: 30px;
+        font-size: 20px;
+        margin-left: 90px
+    }
+    #notStartedDiv{
+        width: 300px;
+        font-size: 30px;
+    }
+    #inProgressDiv{
+        width: 300px;;
+        font-size: 30px;
+    }
+    #alreadyDoneDiv{
+        width: 300px;
+        font-size: 30px;
+    }
+    .addedTask{
+        width: 100px;
+        height: 30px;
+    }
+    #container{
+        height: 700px;
+    }
+    #title{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #taskInput{
+        width: 180px;
+        height: 25px;
+        font-size: 15px;
+        margin-left: 70px;
+    }
+    #addInput{
+        width: 70px;
+        height: 30px;
+        font-size: 20px;
+    }
+    #clearAll{
+        width: 70px;
+        height: 30px;
+        font-size: 20px;
+    }
+    #notStartedDiv{
+        width: 250px;
+        font-size: 25px;
+        margin-left: 18%;
+    }
+    #inProgressDiv{
+        width: 250px;
+        font-size: 25px;
+        margin-left: 18%;
+    }
+    #alreadyDoneDiv{
+        width: 250px;
+        font-size: 25px;
+        margin-left: 18%;
+    }
+    .addedTask{
+        width: 100px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    #taskInput{
+        width: 150px;
+        height: 25px;
+        font-size: 10px;
+        margin-left: 60px;
+    }
+    #addInput{
+        width: 50px;
+        height: 25px;
+        font-size: 10px;
+    }
+    #clearAll{
+        width: 50px;
+        height: 25px;
+        font-size: 10px;
+    }
+    #notStartedDiv{
+        width: 200px;
+        font-size: 20px;
+    }
+    #inProgressDiv{
+        width: 200px;
+        font-size: 20px;
+    }
+    #alreadyDoneDiv{
+        width: 200px;
+        font-size: 20px;
+    }
+    #container{
+        height: 550px;
+    }
+    #title{
+        font-size: 35px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
